@@ -4,7 +4,7 @@ import soundfile
 
 def extract_feature(file_name, mfcc, chroma, mel):
     with soundfile.SoundFile(file_name) as sound_file:
-        X = sound_file.read(dtype="float32")
+        X = sound_file.read(dtype="float64")
         sample_rate=sound_file.samplerate
         if chroma:
             stft=np.abs(librosa.stft(X))
