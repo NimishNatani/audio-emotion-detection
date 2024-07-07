@@ -1,6 +1,6 @@
 streamlit
 librosa
 soundfile
-numpy
+numpy==1.26.4
 cython
 
